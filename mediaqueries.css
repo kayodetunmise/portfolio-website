@@ -1,0 +1,87 @@
+/* Default styles */
+
+/* Media query for smartphones (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+   body {
+     font-size: 14px; /* Decrease font size for better readability */
+   }
+ 
+   /* Adjustments for navigation */
+   .nav-links {
+     display: none; /* Hide nav links */
+   }
+ 
+   #desktop-nav {
+     display: none; /* Hide desktop navigation */
+   }
+ 
+   #hamburger-nav {
+     display: flex; /* Show hamburger navigation */
+   }
+ 
+   .menu-links {
+     display: none; /* Hide menu links by default on small screens */
+   }
+ 
+   .menu-links.open {
+     max-height: 300px; /* Adjust max-height of menu links */
+   }
+ 
+   /* Adjustments for buttons */
+   .btn-container {
+     flex-direction: column; /* Stack buttons vertically */
+     align-items: center; /* Center buttons */
+   }
+ 
+   .btn {
+     width: 100%; /* Make buttons full-width */
+     margin-bottom: 1rem; /* Add space between buttons */
+   }
+ 
+   /* Adjustments for profile section */
+   #profile {
+     flex-direction: column; /* Stack profile elements vertically */
+     align-items: center; /* Center profile elements */
+     height: auto; /* Adjust height to fit content */
+     padding: 2rem; /* Add padding */
+   }
+ 
+   .section__pic-container {
+     width: 100%; /* Make profile picture container full-width */
+     max-width: 300px; /* Limit max-width of profile picture */
+     margin-bottom: 2rem; /* Add space below profile picture */
+   }
+ 
+   .section__text {
+     text-align: center; /* Center text */
+   }
+ 
+   .icon {
+     margin-bottom: 1rem; /* Add space between icons */
+   }
+ 
+   /* Adjustments for sections */
+   section {
+     margin-top: 2rem; /* Reduce top margin */
+     margin-bottom: 2rem; /* Reduce bottom margin */
+   }
+ }
+ 
+ /* Media query for tablets (min-width: 601px) and (max-width: 1024px) */
+ @media only screen and (min-width: 601px) and (max-width: 1024px) {
+   /* Reduce space between sections */
+   section {
+     margin-top: 1.5rem; /* Reduce top margin */
+     margin-bottom: 1.5rem; /* Reduce bottom margin */
+   }
+ }
+ 
+ /* Media query for laptops (min-width: 1025px) */
+ @media only screen and (min-width: 1025px) {
+   /* Reduce space between sections */
+   section {
+     margin-top: 1rem; /* Reduce top margin */
+     margin-bottom: 1rem; /* Reduce bottom margin */
+   }
+ }
+ 
